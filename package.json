@@ -12,7 +12,11 @@
   "dependencies": {
     "better-sqlite3": "^8.6.0",
     "daisyui": "^3.8.1",
+    "dayjs": "^1.11.10",
     "drizzle-orm": "^0.28.6",
+    "graph": "^0.2.0",
+    "graphql": "^16.8.1",
+    "graphql-yoga": "^4.0.4",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
