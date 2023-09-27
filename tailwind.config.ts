@@ -1,5 +1,13 @@
 import type { Config } from 'tailwindcss'
 
+module.exports = {
+  // ...
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["winter"],
+  },
+};
+
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
