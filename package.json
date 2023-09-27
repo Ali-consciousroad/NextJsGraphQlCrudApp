@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:migrations": "drizzle-kit generate:sqlite --out ./server/db/migrations --schema ./server/db/schema.ts"
   },
   "dependencies": {
     "better-sqlite3": "^8.6.0",
