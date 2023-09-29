@@ -1,20 +1,15 @@
-// Import the createYoga function from graphql-yoga
+// Import the 'createYoga' function from the 'graphql-yoga' library.
 import { createYoga } from "graphql-yoga";
 
-// Import the GraphQL schema from the server/gql directory
+// Import the 'schema' from a server-side location (could be a GraphQL schema file).
 import { schema } from "../../../../server/gql";
 
-// Create a new instance of YogaServer using createYoga
+// Create a Yoga server instance with the specified 'schema', GraphQL endpoint, and fetchAPI options.
 const { handleRequest } = createYoga({
-    // Provide the GraphQL schema to the YogaServer
-    schema,
-
-    // Define the GraphQL endpoint where requests will be handled
-    graphqlEndpoint: '/api/graphql',
-
-    // Specify the fetch API used by YogaServer (Request and Response)
-    fetchAPI: { Request, Response }
+  schema, // Your GraphQL schema.
+  graphqlEndpoint: '/api/graphql', // The endpoint where GraphQL requests will be handled.
+  fetchAPI: { Request, Response } // Options for fetching GraphQL requests (e.g., using the 'fetch' API).
 });
 
-// Export the handleRequest function as both GET and POST
-export { handleRequest as GET, handleRequest as POST }
+// Export the 'handleRequest' function as 'GET' and 'POST'.
+export { handleRequest as GET, handleRequest as POST };

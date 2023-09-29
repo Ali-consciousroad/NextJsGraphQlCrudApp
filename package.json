@@ -16,10 +16,12 @@
     "drizzle-orm": "^0.28.6",
     "graph": "^0.2.0",
     "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0",
     "graphql-yoga": "^4.0.4",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.5",
