@@ -1,3 +1,5 @@
+"use client";
+
 // Import the LiHTMLAttributes type from React to describe the props.
 import { LiHTMLAttributes } from "react";
 
